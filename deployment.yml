@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: examq2
+  labels:
+    app: exam
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: exam
+  template:
+    metadata:
+      labels:
+        app: exam
+    spec:
+      containers:
+        - name: swapscont
+          image: swapsdocker2596/examq2

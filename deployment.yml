@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: examq2
+  name: examq46
   labels:
     app: exam
 spec:
